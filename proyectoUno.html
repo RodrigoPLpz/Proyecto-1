@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Integracion de ejercicios DOM</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<header>
+		<h1>Ejercicios con DOM</h1>
+	</header>
+	<nav>
+		<div>
+			<a href="https://centraal.academy/" target="_blank">Centraal Academy</a>
+		</div>
+		<div>
+			<a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">HTML</a>
+		</div>
+		<div>
+			<a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">JavaScript</a>
+		</div>
+		<div>
+			<a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">CSS</a>
+		</div>
+		<div>
+			<a href="https://developer.mozilla.org/es/docs/DOM" target="_blank">DOM</a>
+		</div>
+	</nav>
+	<aside>
+		<div>
+			<img src="assets/img/centraalAcademy.png" width="300px">
+			<img src="assets/img/html.jpg" width="300px">
+			<img src="assets/img/js.png" width="300px">
+			<img src="assets/img/css.png" width="300px">
+		</div>
+	</aside>
+	<section>
+		<article>
+			<h2 id="valPal">Palíndromo</h2>
+			<p>El palíndromo también llamado, palíndroma o palindroma, es una palabra, número o frase que se lee igual adelante que atrás. </p>
+			<button onclick="palindromo()">Valide su frase</button>
+		</article>
+		<article>
+			<h2>Construcción de media piramide</h2>
+			<p>Debe de dar clic en el enlace para ingresar a la visualización de la piramide.</p>
+			<a href="piramide.html"> Clic Aquí </a>
+		</article>
+		<article>
+			<h2 id="estatus">Estatus de jugador</h2>
+			<p>Ingresa tu nivel y te dire que tan bueno eres:</p>
+			<div class="sinCara">
+				<img id="changeImg" src="assets/img/imgEstatusJugador/desconocido.gif" width="250px">
+			</div>
+			<button onclick="estatus()">Ingresa nivel</button>	
+		</article>
+		<article>
+			<h2>Secuecia de Fibonacci</h2>
+			<p>Es una sucesión matemática infinita. Consta de una serie de números naturales que se suman de a 2, a partir de 0 y 1. Básicamente, la sucesión de Fibonacci se realiza sumando siempre los últimos 2 números (Todos los números presentes en la sucesión se llaman números de Fibonacci) de la siguiente manera:</p>
+			<h4 id="numFibo">0,1,1,2,3,5,8,13,21,34... hasta el infinito o él número que desees parar.</h4>
+			<h4>0,1,0+1=1 / 1+1=2 / 1+2=3 / 2+3=5 / 3+5=8 / 5+8=13 / 8+13=21 / 13+21=34...</h4>
+			<h4>¿Qué número deseas conocer?</h4>
+			<button onclick="fibo()">Ingresa el número</button>
+		</article>
+	</section>
+	<footer>
+		<div>
+			<div class="footer-div contacto">
+				<p>Rodrigo Piña Lépiz</p>
+				<p>Email: rodrigopi51.49@gmail.com</p>
+				<p>Celular: 5513971824</p>
+			</div>
+			<div class="footer-div">
+				<div class="picture">
+					<a href="https://www.facebook.com/RodrigoPLpz" target="_blank">
+						<img src="assets/img/facebook.svg">
+					</a>
+					<a href= "https://twitter.com/RodrigoPLepiz" target="_blank">
+						<img src="assets/img/Twitter.png">
+					</a>
+					<a href="https://github.com/RodrigoPLpz" target="_blank">
+						<img src="assets/img/git.png">
+					</a>	
+				</div>
+			</div>							
+	</footer>
+	<script src="assets/scripts.js"></script>
+</body>
+</html>

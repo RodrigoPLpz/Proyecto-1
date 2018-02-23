@@ -1,0 +1,107 @@
+body{
+	background-color: #FFECB3;
+	/*background-image: url("img/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;/*Como queremos que el background se fije a la la pantalla
+	background-position: bottom center;
+	font-family: arial;
+	
+	position:absolute; 
+	z-index:2; proporciona jerarquia al position absolute.
+
+	*/
+}
+header{
+	text-align: center;
+	background-color: #FFC107;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: white;
+}	
+nav {
+    text-align: left;
+    float: left;
+    background-color:#FF5722;
+    display: inline-block;
+    /*margin: 0 10px;*/
+	width: 10%;
+	height: 100%;
+	/*sition: fixed o absolute*/
+
+}
+nav a {
+	color: white; /*colors images contrast*/
+}
+nav a:hover{
+	color:yellow;
+}
+aside {
+	float: right;
+	text-align: center;
+	background-color: #FFECB3;
+	margin: 0 10px;
+	width: 25%;
+	vertical-align: top;
+}
+section {
+	display: inline-block;
+	margin: 0 30px;
+	width: 55%;
+	vertical-align: top;
+	background-color:#FFECB3;
+	color:white;
+}
+article button{
+	color: white;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	background-color: #FFA000; 
+
+}	
+article a {
+	color: white;
+}
+article a:hover{
+	color: yellow;
+}
+article{
+	background-color:#E64A19;	
+	box-shadow: 0 4px 6px 0 hsla(0,0%,0%,0.2);
+}
+article h2 {
+	color:white;
+	font-weight: 800;
+}
+article p{
+	color:#e5e5e5;
+	font-weight: 580;
+}
+
+article .sinCara{
+	text-align: center;
+}
+footer {
+	background-color: #FFA000;
+	padding: 5px;
+	margin:10px;
+
+}
+footer p { /*Se repiere a lo p dentro de footer*/
+	color:white;
+	font-size: 15px;
+}
+footer .picture { /*Encapsular imagen un un contenedor*/
+	width:30px;
+
+}
+footer .picture img {
+	width: 82%;
+}
+footer .footer-div {
+	display: inline-block;
+}
+footer .contacto{
+	width: 80%;
+}
