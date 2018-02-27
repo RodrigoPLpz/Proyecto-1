@@ -1,5 +1,6 @@
-function palindromo (){
-	var datoIngreso = prompt("Ingrese su frase, sin acentos:");
+function palindromo (form){
+	//var datoIngreso = prompt("Ingrese su frase, sin acentos:");
+	var datoIngreso = form.text.value;
 	var h2 = document.querySelector("#valPal");
 	var pal = datoIngreso.toLowerCase();
 	var palInverso="";
@@ -16,13 +17,17 @@ function palindromo (){
 	}
 	if (pal1 === palInverso){
 		h2.innerHTML = "Excelente, ingresaste un palindromo: " + datoIngreso + " = "+ palInverso;
+		//console.log("Excelente, ingresaste un palindromo: " + datoIngreso + " = "+ palInverso);
+
 	} else {
 		h2.innerHTML = "¡Intentalo de nuevo!, la frase es incorrecta: "+ datoIngreso + " = "+ palInverso;
+		//console.log("¡Intentalo de nuevo!, la frase es incorrecta: "+ datoIngreso + " = "+ palInverso);
 	}
 }
 
-function piramide (){
-	var tpi = parseInt(prompt("El tamaño de su piramide es:"));
+function piramide (form){
+	//var tpi = parseInt(prompt("El tamaño de su piramide es:"));
+	var tpi = form.floorsInput.value;
 	var div = document.querySelector('.piramide-div');
 	var piramide = "";	
 	var ladrillo = " *";
@@ -34,8 +39,10 @@ function piramide (){
 	    pre.innerHTML = piramide;
 	}
 }
-function estatus (){
-	var nivel = parseInt(prompt(" Ingresa tu nivel:"));
+function estatus (form){
+	//var nivel = parseInt(prompt(" Ingresa tu nivel:"));
+	var nivel = form.nivel.value;
+	console.log(nivel);
 	var h2 = document.querySelector("#estatus"); //busca en  tu html h2
 	var img = document.querySelector("img");
 	if(nivel>0 && nivel<10){
@@ -52,9 +59,9 @@ function estatus (){
 		document.getElementById("changeImg").src="assets/img/imgEstatusJugador/lol.gif";
 	}
 }
-
-function fibo (){
-	var n = parseInt(prompt("Qué número quieres conocer:"));
+function fibo (form){
+	//var n = parseInt(prompt("Qué número quieres conocer:"));
+	var n = form.fibonacci.value;
 	var h3 = document.querySelector("#numFibo");
 	var x=0;
 	var y=1;

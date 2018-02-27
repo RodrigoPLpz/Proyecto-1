@@ -53,12 +53,17 @@ section {
 	background-color:#FFECB3;
 	color:white;
 }
-article button{
+/*article button{
 	color: white;
 	border-radius: 3px;
 	margin-bottom: 5px;
 	background-color: #FFA000; 
-
+}*/
+article button, section article input[type="button"], body div input[type="button"]{   /*podemos separarlos por comas*/
+color: white;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	background-color: #FFA000;
 }	
 article a {
 	color: white;

@@ -3,6 +3,8 @@
 <head>
 	<title>Integracion de ejercicios DOM</title>
 	<meta charset="utf-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
@@ -39,6 +41,11 @@
 			<h2 id="valPal">Palíndromo</h2>
 			<p>El palíndromo también llamado, palíndroma o palindroma, es una palabra, número o frase que se lee igual adelante que atrás. </p>
 			<button onclick="palindromo()">Valide su frase</button>
+			<form class="form">
+				<label for="text">Valida una frase:</label>
+				<input id="text" name="pal" type="text">
+				<input type="button" onclick="palindromo(this.form)" value="Aceptar">
+			</form>
 		</article>
 		<article>
 			<h2>Construcción de media piramide</h2>
@@ -52,6 +59,11 @@
 				<img id="changeImg" src="assets/img/imgEstatusJugador/desconocido.gif" width="250px">
 			</div>
 			<button onclick="estatus()">Ingresa nivel</button>	
+			<form class="form">
+				<label for="nivel">Ingresa nivel:</label>
+				<input id="nivel" name="nivel" type="number">
+				<input type="button" onclick="estatus(this.form)" value="Aceptar">
+			</form>
 		</article>
 		<article>
 			<h2>Secuecia de Fibonacci</h2>
@@ -60,6 +72,11 @@
 			<h4>0,1,0+1=1 / 1+1=2 / 1+2=3 / 2+3=5 / 3+5=8 / 5+8=13 / 8+13=21 / 13+21=34...</h4>
 			<h4>¿Qué número deseas conocer?</h4>
 			<button onclick="fibo()">Ingresa el número</button>
+			<form action="">
+				<label for="fibonacci">Ingresa un número:</label>
+				<input id="fibonacci" type="number" name="fibonacci">
+				<input type="button" onclick="fibo(this.form)" value="Aceptar">
+			</form>
 		</article>
 	</section>
 	<footer>

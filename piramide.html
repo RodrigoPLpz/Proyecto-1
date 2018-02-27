@@ -12,6 +12,11 @@
   	<div>
   		<p>Este programa contruye una piramide a partir del dato de entrada que proporcione como base.</p>
   		<button onclick="piramide()">Ingrese base</button>
+      <form action="">
+        <label for="floorsInput">Escribe el número de pisos</label>
+        <input id="floorsInput" type="number" name="floorsInput">
+        <input type="button" value="Aceptar" onclick="piramide(this.form)">
+      </form>
   	</div>
   	<div class = "piramide-div">
       <pre></pre>
